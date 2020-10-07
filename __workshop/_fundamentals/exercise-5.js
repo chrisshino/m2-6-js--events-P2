@@ -87,7 +87,19 @@ const staffMembers = [
 
 const getData = (arr, key, val) => {
   // return something
+  const newArr = arr.filter(el => {
+    if (el[key] === val){
+      return el// console.log(el[key])
+    }
+    else if (el.skillLevels[key] >= val){
+      return el
+    }
+  })
+  return newArr
+  // console.log(newArr)
 };
+
+getData(staffMembers, 'title', 'Web Developer II')
 
 // 2. Do a console.log to verify your function.
 

@@ -19,8 +19,18 @@ const people = [
 
 function olderPeople(peopleArr, age) {
   // return something
+  const people = peopleArr.filter(person => {
+    if (person.age > age){
+      return person
+    } 
+    // console.log(person)
+  })
+
+  return people
 }
 
+
+olderPeople(people, 30)
 // 2. Do a console.log to verify your function.
 
 // 3. Run the test to validate: yarn test exercise-4

@@ -21,7 +21,18 @@ const people = [
 
 function avgAge(peopleArr) {
   // return something
+  let ageValues = peopleArr.map((element) => {
+    return element.age;
+  });
+
+  const total =  ageValues.reduce((curr, accum) => {
+    return curr + accum 
+  }) / ageValues.length
+
+  return Math.round(total)
+
 }
+
 
 // 2. Do a console.log to verify your function.
 

@@ -19,7 +19,15 @@ const people = [
 
 function fullName(peopleArr) {
   // return something
+  const people = peopleArr.map((person) => {  
+    const { first, middle, last } = person.name
+    // console.log(first,middle,last)
+    return `${first} ${middle ? `${middle} ` : ''}${last}`
+  });
+
+  return people
 }
+
 
 // 2. Do a console.log to verify your function.
 

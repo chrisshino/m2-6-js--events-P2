@@ -1,1 +1,88 @@
 /* add css here */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-family: "Jost";
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #f2f2f2;
+}
+
+.wrapper {
+  margin-top: 32px;
+  max-width: 475px;
+  padding: 24px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02), 0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  0 12.5px 10px rgba(0, 0, 0, 0.035), 0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+form {
+  padding: 1rem;
+}
+
+.input-label-container {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.terms-container {
+  background-color: #f2f2f2;
+}
+
+.inputs {
+  width: 55%;
+  border: darkgrey solid 1px;
+  border-radius: 5px; 
+}
+
+.labels {
+  width: 45%;
+  text-align: end;
+  padding-right: 0.75rem;
+  white-space: nowrap;
+}
+
+button {
+  color: white;
+  padding: 0.5rem 2.5rem;
+  border-radius: 10px;
+  border: none;
+}
+
+
+.clear {
+  background-color: hsl(333deg, 100%, 44%);
+}
+
+.submit {
+  background-color: hsl(256deg, 100%, 44%);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.terms-container {
+  padding: 0.75rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}

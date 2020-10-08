@@ -3,12 +3,55 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost&display=swap"
+      rel="stylesheet"
+    />
     <link href="style.css" rel="stylesheet" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
     <title>Signup Form</title>
   </head>
   <body>
+    <div class="wrapper">
+      <h1>Signup Form</h1>
+      <form action="">
+        <div class="input-label-container">
+          <label for="name" class='labels'>Full name: </label>
+          <input type="text" id="name" class="inputs" required />
+        </div>
+        <div class="input-label-container">
+          <label for="street" class='labels'>Street address </label>
+          <input type="text" id="street" class="inputs" required/>
+        </div>
+        <div class="input-label-container">
+          <label for="email" class='labels'>Email address </label>
+          <input type="email" id="email" class="inputs" required/>
+        </div>
+        <div class="input-label-container">
+          <label for="phone" class='labels'>Phone number </label>
+          <input type="tel" id="phone" class="inputs" required/>
+        </div>
+        <div class="input-label-container">
+          <label for="password" class='labels'>Password </label>
+          <input type="password" id="password" class="inputs" required/>
+        </div>
+        <div class="input-label-container">
+          <label for="confirm" class='labels'>Confirm Password </label>
+          <input type="password" id="confirm" class="inputs" required/>
+        </div>
+        <div class="terms-container">
+          <input type="checkbox" id="terms" required/>
+          <label for="terms"
+            >I agree to the <a href="#">terms of service</a></label
+          >
+        </div>
+        <footer>
+          <button class="clear">Clear</button>
+          <button class="submit">Submit</button>
+        </footer>
+      </form>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

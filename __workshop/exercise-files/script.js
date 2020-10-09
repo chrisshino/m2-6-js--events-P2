@@ -5,6 +5,20 @@ const password = document.querySelector('#password')
 const passCheck = document.querySelector(`#confirm`)
 const errorBox = document.querySelector('.error')
 const unmatchedBox = document.querySelector('.unmatched')
+const clear = document.querySelector('.clear')
+const inputs = document.querySelectorAll('input')
+
+
+function clearButton () {
+  inputs.forEach(el => {
+    el.value = ''
+  })
+  document.querySelector('#terms').click()
+}
+
+
+
+clear.addEventListener('click', clearButton)
 
 
 function clearErrors () {

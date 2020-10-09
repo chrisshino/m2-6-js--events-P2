@@ -86,3 +86,16 @@ footer {
   border-radius: 10px;
   text-align: center;
 }
+
+.error {
+  background-color: pink;
+  color: black;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  display: none;
+  padding: 0.3rem;
+}

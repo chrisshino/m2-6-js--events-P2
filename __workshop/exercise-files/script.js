@@ -7,7 +7,15 @@ const errorBox = document.querySelector('.error')
 const unmatchedBox = document.querySelector('.unmatched')
 
 
+function clearErrors () {
+  password.style.border = 'darkgrey 1px solid'
+  password.style.boxShadow = 'none'
+  passCheck.style.border = 'darkgrey 1px solid'
+  passCheck.style.boxShadow = 'none'
+}
+
 function handleSubmit(event){
+  clearErrors()
   event.preventDefault()
   if (document.getElementById('terms').checked === false) {
     alert('You must agree to the terms')
@@ -16,15 +24,12 @@ function handleSubmit(event){
     errorBox.innerText = 'Your password is too short! Please provide a password that is at least 10 characters long.'
     errorBox.style.display = 'block'
     password.style.border = '5px red solid'
-    password.style.outline = 'none';
     password.style.boxShadow = '0 0 10px darkblue'
-    // console.log(password)
   }
   else if (password.value.length !== passCheck.value.length) {
     errorBox.innerText = 'Your passwords did not match! Please check again and re-submit.'
     errorBox.style.display = 'block'
-    passCheck.style.border = '2px red solid'
-    passCheck.style.outline = 'none';
+    passCheck.style.border = '5px red solid'
     passCheck.style.boxShadow = '0 0 10px darkblue'
   }
   else {
